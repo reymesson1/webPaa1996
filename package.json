@@ -1,0 +1,16 @@
+{
+  "name": "doc-intel-monorepo",
+  "version": "1.0.0",
+  "description": "Full Stack AI Engineer Assessment - Production-Ready AI Document Intelligence System",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test": "npm --prefix backend test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
